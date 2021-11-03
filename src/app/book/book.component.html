@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<ol>
-  <li *ngFor='let b of books'>
-    {{b.title}} by 
-    {{b.author.name}}
-  </li>
-</ol>
 
+<table>
+    <tr>
+    <th> Title </th>
+    <th> Author</th>
+    </tr>
+  <tr *ngFor='let b of books'>
+    <td><h1> {{b.title}} </h1> </td>
+    <td><h1>{{b.author.name}} </h1> </td>   
+  </tr>
+</table>
 
 <p>book works!</p>
 
